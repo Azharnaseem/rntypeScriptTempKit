@@ -40,12 +40,14 @@ export default function Login() {
   };
 
   return (
+    
     <ScreenWrapper
       statusBarColor={AppColors.primary}
       barStyle="light-content"
       scrollEnabled
     >
       <View style={styles.mainViewContainer}>
+      
         <Image source={Icons.logo} style={styles.logo} resizeMode="contain" />
 
         <View style={styles.inputContainer}>
@@ -77,6 +79,8 @@ export default function Login() {
           </SmallText>
         </View>
         <Spacer vertical={height(2)} />
+       
+        
         <Button
           disabled={!isValid}
           withShadow
@@ -85,6 +89,7 @@ export default function Login() {
           Login
         </Button>
       </View>
+      {/* {console.log("======333===",!isValid)} */}
     </ScreenWrapper>
   );
 }
