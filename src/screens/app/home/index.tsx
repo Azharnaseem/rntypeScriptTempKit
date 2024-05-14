@@ -37,13 +37,13 @@ export default function Home() {
 
   return (
     <ScreenWrapper statusBarColor={AppColors.primary} barStyle="light-content">
-      <Header>DEVELO IT SOLUTION</Header>
+      <Header>Azhar naseem boilderplate</Header>
       <View style={styles.mainViewContainer}>
-        <Avatar
+        {/* <Avatar
           source={profilePicture ? { uri: profilePicture } : undefined}
           showEdit
           onPress={() => showImagePickerRef.current?.show()}
-        />
+        /> */}
         <View style={CommonStyles.marginTop_4}>
           <SmallText>{userInfo?.name}</SmallText>
           <SmallText>{userInfo?.email}</SmallText>

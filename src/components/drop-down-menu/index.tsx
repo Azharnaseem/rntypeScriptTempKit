@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, ReactElement } from "react";
 import { TouchableOpacity, View } from "react-native";
 import Modal from "react-native-modal";
 import { SmallText } from "~components";
@@ -24,7 +24,7 @@ const DropDownMenu: FC<DropDownMenuProps> = ({
   secondBtnText = "",
   thirdText = "",
   onPressThirdBtn = () => {},
-}) => {
+}):ReactElement => {
   return (
     <Modal
       isVisible={isVisible}
